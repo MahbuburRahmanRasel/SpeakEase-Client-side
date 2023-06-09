@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary: #a1d6d5;
+    --secondary: blue;
+    --title: #deb992;
+    --background: #343a40;
+    --text-color: white;
+    --text-area: green;
+  }
+  
+  .adhoster__container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+  }
+  
+  .adhoster__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    position: relative;
+    padding: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .adhoster__card>h1,p,div{
+    margin-bottom: 15px;
+  }
+  
+  
+  .adhoster__circle {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    border-radius: 0px 0px 40px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  
+  .adhoster__card:hover {
+    background: var(--primary);
+    color: #33557c
+    ;
+  }
+
+
+  
+  .disableCard{
+    width: 40px;
+    height: 40px;
+    border-radius: 0px 0px 40px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+  }
+
+  .disableBg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 5px;
+    position: relative;
+    padding: 50px;
+    transition: all 0.3s ease;
+    
+  }
+
+  .disableBg:hover {
+    background:    indianred;
+    color: white
+    ;
+  }
+
+
+  
+  /*# Extra large	 */
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+  }
+  
+  /* #Large devices */
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+    .adhoster__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /*# Small devices (landscape phones,tablet) */
+  @media screen and (min-width: 1px) and (max-width: 992px) {
+    .adhoster__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /*# only for Small devices  */
+  @media screen and (max-width: 700px) {
+    .adhoster__container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
