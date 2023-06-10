@@ -19,12 +19,12 @@ const AboutClass = () => {
         alt=""
         className="mx-auto my-10"
       />
-      <h1 className="text-center text-theme-dark text-4xl font-bold">
+      <h1 className="text-center text-theme-dark  dark:text-theme-3-100    text-4xl font-bold">
         Come join us for our energizing
         <br />
         <span className="text-theme-1 ">foreign language classes</span>
       </h1>
-      <p className="text-theme-2 text-center text-lg">
+      <p className="text-theme-2  dark:text-theme-1  text-center text-lg ">
         Fun and engaging way to learn a new language, language learning camping
         in summer camp is a great option.{" "}
       </p>
