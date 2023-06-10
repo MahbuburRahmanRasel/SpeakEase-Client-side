@@ -1,8 +1,13 @@
 import React from 'react';
-import teachers from '../../../public/Teachers.json'
+// import teachers from '../../../public/Teachers.json'
 import Instructor from './Instructor';
+import { useLoaderData } from 'react-router-dom';
 
 const Instructors = () => {
+
+  const teachers = useLoaderData()
+
+
     return (
         <div>
      

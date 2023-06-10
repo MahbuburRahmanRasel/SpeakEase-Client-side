@@ -3,27 +3,57 @@ import './SingleClass.css'
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2'
 
+import { useLocation, useNavigate } from 'react-router-dom';
+import useCart from '../../Hooks/useCarts';
+
 const SingleClass = ({item, index}) => {
 
 
-    const {image, languageName, instructorName, availableSeats, price} = item
+    const {image, languageName, instructorName, availableSeats, price, _id} = item
 
     const { user} = useContext(AuthContext);
+    const [, refetch] = useCart()
+    const navigate = useNavigate()
+    const location = useLocation()
 
+   
 
-    const handleToast = (id)=>{
-        if(!user){
-    
+    const handleToast = (item)=>{
+
+          if(user && user?.email){
+            const cartItem = {ItemId: _id,  image, price, languageName, instructorName, email: user.email}
+            fetch('http://localhost:5000/carts',{
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(cartItem)
+            })
+            
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if(data.insertedId){
+                    refetch()
+                    Swal.fire('Successfully selected')
+                }
+            })
+          }
+          else{
             Swal.fire({
                 title: 'Error!',
                 text: 'You have to Login first',
                 icon: 'error',
                 confirmButtonText: 'Okay',
                 confirmButtonColor: '#469e92',
-
               })
-    
+              .then((result) => {
+                if (result.isConfirmed) {
+                  navigate('/login', {state: {from: location}})
+                }
+              })
           }
+
           
         }
 
@@ -43,7 +73,7 @@ const SingleClass = ({item, index}) => {
                 className= {`btn my-btn-1 disabled:opacity-100 disabled:pointer-events-none`} 
                 disabled={availableSeats === 0}
                 
-                onClick={()=>handleToast(index)}
+                onClick={()=>handleToast(item)}
                 > Select Class</button>
                 
             </div>

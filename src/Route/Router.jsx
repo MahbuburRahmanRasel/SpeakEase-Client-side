@@ -29,10 +29,12 @@ const router = createBrowserRouter([
         {
           path: "/instructors",
           element: <Instructors />,
+          loader: ()=> fetch('http://localhost:5000/teachers')
         },
         {
           path: "/classes",
           element: <Classes />,
+          loader: ()=> fetch('http://localhost:5000/allclasses')
         },
         
       ],

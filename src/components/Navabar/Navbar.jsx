@@ -2,17 +2,20 @@ import React, { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import {
+  BsFillCartFill,
   BsFillPersonVcardFill,
   BsPersonFill,
   BsPersonVideo3,
 } from "react-icons/bs";
 import { AuthContext } from "../../Providers/AuthProvider";
+import useCart from "../../Hooks/useCarts";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-
+  const [cart] = useCart()
   const navigate = useNavigate();
 
+  console.log(cart)
   const handleLogout = () => {
     logOut()
       .then(navigate("/", { replace: true }))
@@ -50,6 +53,27 @@ const Navbar = () => {
           Classes
         </div>
       </NavLink>
+
+      {
+        user? 
+        <NavLink
+        to="/dashboard"
+        className={({ isActive }) => (isActive ? "active" : "default")}
+      >
+        <div className="flex flex-row justify-center items-center gap-2 text-theme-dark relative">
+          <BsFillCartFill className="icon-color " />
+          <p className="absolute -top-1 left-3 text-[#A83A49] font-bold">+{cart?.length || 0}</p>
+          Dashoboard
+          
+        </div>
+      </NavLink>
+      :
+      ""
+      }
+
+
+
+
     </>
   );
 

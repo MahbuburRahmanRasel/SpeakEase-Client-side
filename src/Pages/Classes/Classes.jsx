@@ -1,8 +1,14 @@
 import React from "react";
-import classes from "../../../public/Classes.json";
+// import classes from "../../../public/Classes.json";
 import SingleClass from "./SingleClass";
+import { useLoaderData, useLocation, useNavigate } from "react-router-dom";
 
 const Classes = () => {
+
+  const classes = useLoaderData()
+
+
+
   return (
     <div>
      
