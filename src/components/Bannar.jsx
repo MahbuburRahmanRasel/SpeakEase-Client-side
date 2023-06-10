@@ -13,14 +13,14 @@ const Banner = () => {
 
   return (
     <div className="">
-      <div className="carousel w-full lg:h-[600px] mt-4 bg-img-3 flex flex-col  md:flex-row  justify-between p-20">
-        <div data-aos="fade-right" className="w-1/2  text-center ">
+      <div className="carousel w-full lg:h-[600px] mt-4 bg-img-3 flex flex-col  md:flex-row  justify-between p-20 ">
+        <div data-aos="fade-right" className="md:w-1/2  text-center ">
           <div className=" mx-auto">
-            <h1 className="text-neutral-50 text-5xl font-bold  leading-snug">
+            <h1 className="text-neutral-50 text-2xl md:text-5xl font-bold  leading-snug">
               {" "}
               Learn a New Language and Explore a New Culture
               <br />
-              <span className="text-theme-1 text-4xl  ">
+              <span className="text-theme-1 text-2xl md:text-4xl  ">
                 <Typewriter
                   words={["Summer Camp for Global Kid"]}
                   loop
@@ -32,7 +32,7 @@ const Banner = () => {
                 />
               </span>
             </h1>
-            <p className="text-neutral-50 text-xl font-bold mt-9 ">
+            <p className="text-neutral-50 text-sm md:text-xl font-bold mt-9 ">
               Our language learning camps are the perfect way to immerse
               yourself in a new language and culture. With our experienced staff
               and fun activities, you will be speaking like a native in no time!
@@ -40,7 +40,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="w-1/2">
+        <div className="  md:w-1/2">
           <Lottie
             animationData={language}
             className="  "

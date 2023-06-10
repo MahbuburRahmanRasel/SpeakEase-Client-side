@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: 'class',
+  darkMode: 'media',
+  variants: {
+    extend: {
+      textColor: ['dark'],
+    },
+  },
   theme: {
     colors: {
       "theme-1": "#159895",
@@ -55,6 +60,9 @@ export default {
         800: "#001124",
         900: "#000912",
       },
+    },
+    extend: {
+      darkSelector: '.dark-mode',
     },
   },
   plugins: [require("daisyui")],

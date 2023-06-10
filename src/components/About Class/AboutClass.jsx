@@ -24,7 +24,7 @@ const AboutClass = () => {
         <br />
         <span className="text-theme-1 ">foreign language classes</span>
       </h1>
-      <p className="text-theme-2  dark:text-theme-1  text-center text-lg ">
+      <p className=" text-theme-3-600  text-center text-lg ">
         Fun and engaging way to learn a new language, language learning camping
         in summer camp is a great option.{" "}
       </p>

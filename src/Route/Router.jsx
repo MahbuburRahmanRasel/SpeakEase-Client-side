@@ -6,6 +6,14 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Login/Register";
 import Instructors from "../Pages/Instructors/Instructors";
 import Classes from "../Pages/Classes/Classes";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import AddClass from "../Pages/Dashboard/AddClass";
+import Enrolledclass from "../Pages/Dashboard/Enrolledclass";
+import ManageClass from "../Pages/Dashboard/ManageClass";
+import ManageUser from "../Pages/Dashboard/ManageUser";
+import MyClass from "../Pages/Dashboard/MyClass";
+import Payment from "../Pages/Dashboard/Payment";
+import Selectedclass from "../Pages/Dashboard/Selectedclass";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +47,45 @@ const router = createBrowserRouter([
         
       ],
     },
+    {
+      path: '/dashboard',
+      element: <Dashboard />,
+      children:[
+        {
+          path: '/addclass',
+          element: <AddClass />
+
+  
+        },
+        {
+          path: '/enrolledclass',
+          element:<Enrolledclass/>
+        },
+        {
+          path: '/manageclass',
+          element: <ManageClass />,
+        },
+        {
+          path: '/manageuser',
+          element: <ManageUser/>
+        },
+        {
+          path: 'myclass',
+          element:<MyClass />
+        },
+        {
+          path: 'payment',
+          element:  <Payment />
+        },
+        {
+          path: 'selectedclass',
+          element:<Selectedclass />,
+        }
+
+      ]
+      
+
+    }
   ]);
   
   export default router;
