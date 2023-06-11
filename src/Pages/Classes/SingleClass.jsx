@@ -5,6 +5,7 @@ import Swal from 'sweetalert2'
 
 import { useLocation, useNavigate } from 'react-router-dom';
 import useCart from '../../Hooks/useCarts';
+import useUsers from '../../Hooks/useUsers';
 
 const SingleClass = ({item, index}) => {
 
@@ -15,6 +16,9 @@ const SingleClass = ({item, index}) => {
     const [, refetch] = useCart()
     const navigate = useNavigate()
     const location = useLocation()
+    const [, ,requireUser ] = useUsers()
+
+    console.log(requireUser)
 
    
 
@@ -70,8 +74,9 @@ const SingleClass = ({item, index}) => {
                 <p>Available Seats : {availableSeats}</p>
 
                 <button 
-                className= {`btn my-btn-1 disabled:opacity-100 disabled:pointer-events-none`} 
-                disabled={availableSeats === 0}
+                className= {`btn my-btn-1  ${availableSeats === 0  || requireUser?.role === "instructor" || requireUser?.role === "admin" ? "opacity-50 pointer-events-none":""}`} 
+                
+               
                 
                 onClick={()=>handleToast(item)}
                 > Select Class</button>

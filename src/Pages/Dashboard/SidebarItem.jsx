@@ -5,16 +5,18 @@ import { AuthContext } from "../../Providers/AuthProvider";
 
 const SidebarItem = ({ menu, open }) => {
 
-const [users] = useUsers()
-const {user} = useContext(AuthContext)
+const [, , requireUser ] = useUsers()
 
-console.log(user)
+// const {user} = useContext(AuthContext)
+
+// const requireUser = users.find((ele) => (ele?.email === user?.email))
+// console.log(requireUser)
 
 
   return (
     <>
       {
-        users.map(item=> item.role === menu.role  && item === user) && 
+        requireUser?.role === menu.role && 
         <Link
         to={menu?.link}
         className={`  flex items-center text-sm  gap-3 font-medium  hover:bg-theme-5-400  cursor-pointer text-theme-3-100 `}
