@@ -26,8 +26,8 @@ const Sidebar = () => {
         { "name": "Manage User", "link": "/dashboard/manageuser", icon: <FaUserFriends/> , "role": "admin" },
         { "name": "Add A Class", "link": "/dashboard/addclass", icon: <AiFillFileAdd /> , "role": "instructor" },
         { "name": "My Class", "link": "/dashboard/myclass", icon: <FaUserGraduate /> , "role": "instructor" },
-        { "name": "My selected Class", "link": "/dashboard/selectedclass", icon: <FaUserCheck /> , "role": "" },
-        { "name": "Enrolled Class", "link": "/dashboard/enrolledclass", icon: <BsFillCartCheckFill /> , "role": "" }
+        { "name": "My selected Class", "link": "/dashboard/selectedclass", icon: <FaUserCheck /> , "role": "user" },
+        { "name": "Enrolled Class", "link": "/dashboard/enrolledclass", icon: <BsFillCartCheckFill /> , "role": "user" }
         
     ]
     
@@ -54,7 +54,11 @@ const Sidebar = () => {
           <p>Home</p>
 
           </div>
-          <div className="divider mt-0"></div> 
+          <img
+        src="https://i.ibb.co/xXYVqsV/divider.png"
+        alt=""
+        className="mx-auto my-10 "
+      />
           
           </Link>
  
