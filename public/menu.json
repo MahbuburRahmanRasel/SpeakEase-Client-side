@@ -1,0 +1,9 @@
+[
+    { "name": "Manage Class", "link": "/dashboard", "icon": "todo" , "role": "admin" },
+    { "name": "Manage User", "link": "/dashboard/manageuser", "icon": "todo" , "role": "admin" },
+    { "name": "Add A Class", "link": "/dashboard/addclass", "icon": "todo" , "role": "instructor" },
+    { "name": "My Class", "link": "/dashboard/myclass", "icon": "todo" , "role": "instructor" },
+    { "name": "My selected Class", "link": "/dashboard/selectedclass", "icon": "todo" , "role": "user" },
+    { "name": "Enrolled Class", "link": "/dashboard/enrolledclass", "icon": "todo" , "role": "admin" }
+    
+]

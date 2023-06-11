@@ -48,25 +48,25 @@ const router = createBrowserRouter([
       ],
     },
     {
-      path: '/dashboard',
+      path: 'dashboard',
       element: <Dashboard />,
       children:[
         {
-          path: '/addclass',
+          path: 'addclass',
           element: <AddClass />
 
   
         },
         {
-          path: '/enrolledclass',
+          path: 'enrolledclass',
           element:<Enrolledclass/>
         },
         {
-          path: '/manageclass',
+          path: 'manageclass',
           element: <ManageClass />,
         },
         {
-          path: '/manageuser',
+          path: 'manageuser',
           element: <ManageUser/>
         },
         {
