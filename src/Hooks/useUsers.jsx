@@ -10,7 +10,7 @@ const useUsers = () => {
     return res.json();
   });
 
-  const requireUser = users.find((ele) => ele.email === user.email);
+  const requireUser = users.find((ele) => ele.email === user?.email);
   return [users, refetch, requireUser];
 };
 
