@@ -74,7 +74,7 @@ const SingleClass = ({item, index}) => {
                 <p>Available Seats : {availableSeats}</p>
 
                 <button 
-                className= {`btn my-btn-1  ${availableSeats === 0  || requireUser?.role === "instructor" || requireUser?.role === "admin" ? "opacity-50 pointer-events-none":""}`} 
+                className= {`btn my-btn-1  ${availableSeats === 0   ? "opacity-50 pointer-events-none":""}`} 
                 
                
                 
