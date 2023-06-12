@@ -12,8 +12,9 @@ import Enrolledclass from "../Pages/Dashboard/Enrolledclass";
 import ManageClass from "../Pages/Dashboard/ManageClass";
 import ManageUser from "../Pages/Dashboard/ManageUser";
 import MyClass from "../Pages/Dashboard/MyClass";
-import Payment from "../Pages/Dashboard/Payment";
+
 import Selectedclass from "../Pages/Dashboard/Selectedclass";
+import Payment from "../Payment/Payment";
 
 const router = createBrowserRouter([
     {
