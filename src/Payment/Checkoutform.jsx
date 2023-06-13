@@ -121,7 +121,7 @@ const CheckoutForm = ({  cart }) => {
                         },
                     }}
                 />
-                <button className="btn btn-primary btn-sm mt-4" type="submit" disabled={!stripe || !clientSecret || process}>
+                <button className="btn btn-primary btn-sm mt-4" type="submit" disabled={!stripe || !clientSecret }>
                     Pay
                 </button>
             </form>
