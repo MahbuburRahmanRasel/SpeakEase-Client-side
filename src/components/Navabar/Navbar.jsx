@@ -22,13 +22,8 @@ const Navbar = () => {
 useEffect(()=>{
 
   localStorage.setItem("theme", theme)
-
   const localtheme =  localStorage.getItem("theme")
   document.querySelector("html").setAttribute("data-theme" , localtheme)
-
-
-
-
 },[theme])
 
 
@@ -129,17 +124,17 @@ const handletoggle =(e)=>{
               {navItems}
             </ul>
           </div>
+
           <img
             src="https://i.postimg.cc/X7f42fdZ/logo.png"
             alt=""
-            className="w-1/3"
+            className="w-full"
           />
+
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className=" px-1  font-bold lg:flex gap-5">{navItems}</ul>
         </div>
-
-        
 
         <div className="navbar-end gap-6">
           {user?.photoURL ? (

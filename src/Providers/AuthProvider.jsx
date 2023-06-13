@@ -75,6 +75,8 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
+  const [singleCart , setSingleCart] = useState({})
+
   const authInfo = {
     registerUser,
     user,
@@ -85,6 +87,9 @@ const AuthProvider = ({ children }) => {
     setLoading,
     signInWithGoogle,
     updateUserProfile,
+    singleCart,
+    setSingleCart
+
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
