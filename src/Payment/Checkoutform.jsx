@@ -85,10 +85,9 @@ const CheckoutForm = ({  cart }) => {
                 transactionId: paymentIntent.id,
                 price,
                 date: new Date(),
-                quantity: cart.length,
                 className: cart.languageName,
                 instructorName: cart.instructorName,
-                status: 'service pending',
+              
                 
             }
             axiosSecure.post('/payments', payment)
@@ -122,7 +121,7 @@ const CheckoutForm = ({  cart }) => {
                         },
                     }}
                 />
-                <button className="btn btn-primary btn-sm mt-4" type="submit" disabled={!stripe || !clientSecret || processing}>
+                <button className="btn btn-primary btn-sm mt-4" type="submit" disabled={!stripe || !clientSecret || process}>
                     Pay
                 </button>
             </form>
