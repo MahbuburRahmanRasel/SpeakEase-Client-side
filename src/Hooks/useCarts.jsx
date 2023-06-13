@@ -8,6 +8,9 @@ const useCart = ()=>{
 
     const {user} = useContext(AuthContext)
 
+
+    const token = localStorage.getItem()
+
     const { refetch, data:cart=[] } = useQuery({
         queryKey: ['carts', user?.email],
         queryFn: async () => {
