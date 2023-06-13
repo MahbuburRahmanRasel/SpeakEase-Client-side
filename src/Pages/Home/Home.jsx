@@ -5,6 +5,7 @@ import VideoSection from '../../components/VideoSection/VideoSection';
 import Gallary from '../../components/Gallary/Gallary';
 import OurTeachers from '../../components/OurTeachers/OurTeachers';
 import PopularClasses from '../../components/PouplarClasses/PopularClasses';
+import SortedClass from '../../components/SortedClass/SortedClass';
 
 const Home = () => {
     return (
@@ -13,8 +14,9 @@ const Home = () => {
             <AboutClass />
             <VideoSection />
             <Gallary/>
-            <OurTeachers />
-            <PopularClasses />
+            {/* <OurTeachers />
+            <PopularClasses /> */}
+            <SortedClass />
         </div>
     );
 };

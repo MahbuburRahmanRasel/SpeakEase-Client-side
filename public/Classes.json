@@ -4,91 +4,104 @@
     "languageName": "French",
     "instructorName": "Sophie Dubois",
     "availableSeats": 20,
-    "price": 199.99
+    "price": 199.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/8j8n4c6/2.png",
     "languageName": "Spanish",
     "instructorName": "Carlos Hernandez",
     "availableSeats": 15,
-    "price": 149.99
+    "price": 149.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/k4g14Kk/3.png",
     "languageName": "German",
     "instructorName": "Hans Müller",
     "availableSeats": 0,
-    "price": 169.99
+    "price": 169.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/NWmP6NC/4.png",
     "languageName": "Chinese",
     "instructorName": "Li Wei",
     "availableSeats": 25,
-    "price": 199.99
+    "price": 199.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/W0PscTY/5.png",
     "languageName": "Japanese",
     "instructorName": "Yuki Tanaka",
     "availableSeats": 20,
-    "price": 179.99
+    "price": 179.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/bmx8Kjr/6.png",
     "languageName": "Italian",
     "instructorName": "Giovanni Rossi",
     "availableSeats": 15,
-    "price": 159.99
+    "price": 159.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/Yy8QMQr/7.png",
     "languageName": "Arabic",
     "instructorName": "Ali Ahmed",
     "availableSeats": 10,
-    "price": 179.99
+    "price": 179.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/rM0FZMH/8.png",
     "languageName": "Russian",
     "instructorName": "Svetlana Ivanova",
     "availableSeats": 0,
-    "price": 189.99
+    "price": 189.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/ZXXGq97/9.png",
     "languageName": "Portuguese",
     "instructorName": "Pedro Silva",
     "availableSeats": 20,
-    "price": 169.99
+    "price": 169.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/c8FFmBj/10.png",
     "languageName": "Korean",
     "instructorName": "Kim Min-Ji",
     "availableSeats": 15,
-    "price": 159.99
+    "price": 159.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/wpTxGKG/11.png",
     "languageName": "Hindi",
     "instructorName": "Amit Patel",
     "availableSeats": 10,
-    "price": 179.99
+    "price": 179.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/0fRLJ0w/12.png",
     "languageName": "Dutch",
     "instructorName": "Emma van der Meer",
     "availableSeats": 0,
-    "price": 189.99
+    "price": 189.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/Y2jvFrd/13.png",
     "languageName": "Greek",
     "instructorName": "Maria Papadopoulos",
     "availableSeats": 0,
-    "price": 169.99
+    "price": 169.99,
+    "totalStudents" : 0
   },
 
   {
@@ -96,35 +109,40 @@
     "languageName": "Spanish",
     "instructorName": "Maria Sanchez",
     "availableSeats": 18,
-    "price": 149.99
+    "price": 149.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/0CYqWv4/15.png",
     "languageName": "German",
     "instructorName": "Hans Schmidt",
     "availableSeats": 12,
-    "price": 179.99
+    "price": 179.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/WggJn9P/16.png",
     "languageName": "Italian",
     "instructorName": "Giuseppe Russo",
     "availableSeats": 15,
-    "price": 159.99
+    "price": 159.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/2PF9BGk/17.png",
     "languageName": "Chinese",
     "instructorName": "Li Wei",
     "availableSeats": 20,
-    "price": 199.99
+    "price": 199.99,
+    "totalStudents" : 0
   },
   {
     "image": "https://i.ibb.co/LYtJHMr/18.png",
     "languageName": "Russian",
     "instructorName": "Anastasia Ivanova",
     "availableSeats": 22,
-    "price": 189.99
+    "price": 189.99,
+    "totalStudents" : 0
   }
 ]
 

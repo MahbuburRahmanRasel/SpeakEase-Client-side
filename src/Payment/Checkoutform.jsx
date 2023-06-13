@@ -4,11 +4,12 @@ import { useState,useContext } from "react";
 import './CheckoutForm.css'
 import { AuthContext } from "../Providers/AuthProvider";
 import useAxiosSecure from "../Hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 
 
-const CheckoutForm = ({  cart }) => {
-    const {price} = cart
+const CheckoutForm = ({  singleCart }) => {
+    const {price,languageName, instructorName, _id, ItemId} = singleCart
     const stripe = useStripe();
     const elements = useElements();
     const {user} = useContext(AuthContext);
@@ -19,11 +20,14 @@ const CheckoutForm = ({  cart }) => {
     const [processing, setProcessing] = useState(false);
     const [transactionId, setTransactionId] = useState('');
 
+
+
+
     useEffect(() => {
         if (price > 0) {
             axiosSecure.post('/create-payment-intent', { price })
                 .then(res => {
-                    console.log(res.data.clientSecret)
+                    // console.log(res.data.clientSecret)
                     setClientSecret(res.data.clientSecret);
                 })
         }
@@ -81,22 +85,40 @@ const CheckoutForm = ({  cart }) => {
             setTransactionId(paymentIntent.id);
             // save payment information to the server
             const payment = {
+
                 email: user?.email,
                 transactionId: paymentIntent.id,
                 price,
                 date: new Date(),
-                className: cart.languageName,
-                instructorName: cart.instructorName,
-              
+                className: languageName,
+                payClassId: _id,
+       
                 
             }
             axiosSecure.post('/payments', payment)
                 .then(res => {
                     console.log(res.data);
-                    if (res.data.result.insertedId) {
-                        // display confirm
+                    if (res.data.insertResult.insertedId) {
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Your Payment has been submitted',
+                            showConfirmButton: false,
+                            timer: 1500
+                          })
                     }
                 })
+
+                fetch(`http://localhost:5000/allclasses/${ItemId}`, {
+                    method: 'PATCH'
+                        })
+                        .then(res => res.json())
+                        .then(data => {
+                        console.log(data)})
+
+                
+
+
         }
 
 
