@@ -14,7 +14,7 @@
     "aos": "^2.3.4",
     "axios": "^1.4.0",
     "daisyui": "^3.0.3",
-    "firebase": "^9.22.1",
+    "firebase": "^9.22.2",
     "jsonwebtoken": "^9.0.0",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.0",
@@ -45,5 +45,10 @@
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.9"
-  }
+  },
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
