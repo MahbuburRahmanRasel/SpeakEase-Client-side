@@ -79,7 +79,7 @@ const Register = () => {
                 alt=""
                 className="mx-auto  w-1/2"
               />
-              <form onSubmit={handleSubmit(onSubmit)} className="card-body">
+              <form onSubmit={handleSubmit(onSubmit)} className="card-body w-full overflow-y-scroll h-96">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Name</span>

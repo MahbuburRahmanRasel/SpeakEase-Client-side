@@ -16,10 +16,12 @@ const Payment = () => {
 
     return (
         <div>
-            <h2 className="text-3xl"> Please Pay</h2>
-            <Elements stripe={stripePromise}>
+            <h2 className="text-3xl text-center font-bold"> Please Pay</h2>
+            <div className="mx-auto border border-theme-3-400 w-2/3 rounded-md p-8 my-4">
+            <Elements stripe={stripePromise} >
                 <CheckoutForm singleCart = {singleCart} ></CheckoutForm>
             </Elements>
+            </div>
         </div>
     );
 };

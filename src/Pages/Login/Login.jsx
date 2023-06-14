@@ -77,10 +77,10 @@ const Login = () => {
 
   return (
     <div data-aos="fade-down">
-      <div className="hero min-h-screen bg-theme-4-100">
+      <div className="hero min-h-screen bg-theme-4-100 w-full">
         <div className="hero-content flex-col lg:flex-row">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <div className="card-body">
+            <div className="card-body w-full">
               <h1 className="text-theme-3-500 text-3xl font-bold text-center">
                 Please Login
               </h1>
@@ -89,21 +89,22 @@ const Login = () => {
                 alt=""
                 className="mx-auto  w-1/2"
               />
-              <form onSubmit={handleLogin}>
+              <form onSubmit={handleLogin} className="w-full">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text my-text-2 font-semibold">
+                    <span className="label-text my-text-2 font-semibold ">
                       Email
                     </span>
                   </label>
                   <input
                     type="text"
                     placeholder="email"
-                    className="input input-bordered my-bg-2"
+                    className="input input-bordered  "
                     name="email"
                   />
                 </div>
-                <div className="form-control password-input-wrapper">
+
+                <div className="form-control password-input-wrapper ">
                   <label className="label ">
                     <span className="label-text my-text-2 font-semibold">
                       Password
@@ -113,11 +114,12 @@ const Login = () => {
                     <input
                       type={showPassword ? "text" : "password"}
                       placeholder="password"
-                      className="input input-bordered my-bg-2 "
+                      className="input input-bordered   "
                       name="password"
                     />
+
                     <button
-                      className=" password-toggle-button"
+                      className=" password-toggle-button "
                       onClick={handleTogglePasswordVisibility}
                     >
                       {showPassword ? (
@@ -129,9 +131,9 @@ const Login = () => {
                   </div>
                
                 <div className="form-control mt-6">
-                  <button className="btn my-btn-1">
+                  <button className="btn my-btn-1">Login
                     
-                    {loading ? <ImSpinner11  size={24} className="animate-spin"/> : "Login"}
+                    {/* {loading ? <ImSpinner11  size={24} className="animate-spin"/> : "Login"} */}
                     
                     
                     </button>

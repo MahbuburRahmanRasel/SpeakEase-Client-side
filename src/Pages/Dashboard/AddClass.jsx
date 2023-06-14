@@ -23,8 +23,9 @@ const AddClass = () => {
 
     const updatedclass = {
         image,
-        instructorName,
         languageName,
+        instructorName,
+        email,
         availableSeats,
         price,
         totalStudents,
@@ -55,7 +56,7 @@ const AddClass = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        if (data.modifiedCount > 0) {
+        if (data.insertedId) {
           Swal.fire({
             title: "Success!",
             text: "Post a Class  Successfully",

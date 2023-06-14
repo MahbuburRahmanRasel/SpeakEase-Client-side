@@ -22,7 +22,7 @@ const SortedClass = () => {
           Popular Class
         
         </h1>
-      <div className="grid grid-cols-3 gap-4 my-container">
+      <div className="grid  grid-cols-1 md:grid-cols-3 gap-4 my-container">
         {sortedClass.map((item, index) => (
           <SingleSortedClass key={index} item={item} />
         ))}

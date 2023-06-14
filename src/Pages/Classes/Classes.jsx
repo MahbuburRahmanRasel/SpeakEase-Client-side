@@ -1,11 +1,13 @@
 import React from "react";
 // import classes from "../../../public/Classes.json";
 import SingleClass from "./SingleClass";
+
 import { useLoaderData, useLocation, useNavigate } from "react-router-dom";
+import useAllClasses from "../../Hooks/useAllClasses";
 
 const Classes = () => {
 
-  const classes = useLoaderData()
+  const [allClasses] = useAllClasses()
 
 
 
@@ -14,7 +16,7 @@ const Classes = () => {
      
       <div className="grid grid-cols-3 gap-4 my-container">
         
-        {classes.map((item, index) => 
+        {allClasses.map((item, index) => 
          
          <SingleClass 
          key={index}
