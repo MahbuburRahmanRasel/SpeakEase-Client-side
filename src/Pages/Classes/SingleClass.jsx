@@ -26,7 +26,7 @@ const SingleClass = ({item, index}) => {
 
           if(user && user?.email){
             const cartItem = {ItemId: _id,  image, price, languageName, instructorName, email: user.email}
-            fetch('http://localhost:5000/carts',{
+            fetch('https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/carts',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

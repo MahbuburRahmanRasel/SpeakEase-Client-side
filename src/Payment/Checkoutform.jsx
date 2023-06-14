@@ -109,7 +109,7 @@ const CheckoutForm = ({  singleCart }) => {
                     }
                 })
 
-                fetch(`http://localhost:5000/allclasses/${ItemId}`, {
+                fetch(`https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/allclasses/${ItemId}`, {
                     method: 'PATCH'
                         })
                         .then(res => res.json())

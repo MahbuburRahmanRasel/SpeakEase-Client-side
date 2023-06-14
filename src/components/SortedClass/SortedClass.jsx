@@ -5,7 +5,7 @@ const SortedClass = () => {
   const [sortedClass, setSortedClass] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/sortclass")
+    fetch("https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/sortclass")
       .then((res) => res.json())
       .then((data) => setSortedClass(data));
   }, []);

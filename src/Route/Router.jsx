@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         {
           path: "/instructors",
           element: <Instructors />,
-          loader: ()=> fetch('http://localhost:5000/teachers')
+          loader: ()=> fetch('https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/teachers')
         },
         {
           path: "/classes",

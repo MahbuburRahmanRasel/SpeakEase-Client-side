@@ -60,7 +60,7 @@ const AuthProvider = ({ children }) => {
 
       if (loggedInUser) {
         axios
-          .post("http://localhost:5000/jwt", { email: loggedInUser.email })
+          .post("https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/jwt", { email: loggedInUser.email })
           .then((data) => {
            
             localStorage.setItem("access-token", data.data.token);

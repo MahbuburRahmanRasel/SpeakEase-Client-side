@@ -6,7 +6,7 @@ const useUsers = () => {
   const { user } = useContext(AuthContext);
 
   const { data: users = [], refetch } = useQuery(["users"], async () => {
-    const res = await fetch("http://localhost:5000/users");
+    const res = await fetch("https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/users");
     return res.json();
   });
 

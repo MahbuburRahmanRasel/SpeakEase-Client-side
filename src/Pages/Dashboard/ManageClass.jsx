@@ -8,7 +8,7 @@ const ManageClass = () => {
     // const [allclass , setAllclass] =useState([])
 
     // useEffect(()=>{
-    //     fetch('http://localhost:5000/allclasses/')
+    //     fetch('https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/allclasses/')
     //     .then(res=>res.json())
     //     .then(data=>setAllclass(data))
     // },[])
@@ -18,7 +18,7 @@ const ManageClass = () => {
 
 
     const handleApproved = item =>{
-        fetch(`http://localhost:5000/allclasses/approved/${item._id}`, {
+        fetch(`https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/allclasses/approved/${item._id}`, {
             method: 'PATCH'
         })
         .then(res => res.json())
@@ -38,7 +38,7 @@ const ManageClass = () => {
     }
 
     const handleDenied = item =>{
-        fetch(`http://localhost:5000/allclasses/denied/${item._id}`, {
+        fetch(`https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/allclasses/denied/${item._id}`, {
             method: 'PATCH'
         })
         .then(res => res.json())

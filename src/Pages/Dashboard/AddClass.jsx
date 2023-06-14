@@ -44,7 +44,7 @@ const AddClass = () => {
 
 
     fetch(
-      `http://localhost:5000/allclasses`,
+      `https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/allclasses`,
       {
         method: "POST",
         headers: {
