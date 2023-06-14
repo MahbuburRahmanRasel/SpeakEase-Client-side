@@ -1,14 +1,19 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 
 const AddClass = () => {
   const { user } = useContext(AuthContext);
-
-  const [formdata , setFormdata] = useState({})
+  const formRef = useRef(null);
+ 
 
 
   const handleUpdate = (event) => {
+
+
+
+
+
     event.preventDefault();
     const form = event.target;
 
@@ -67,16 +72,8 @@ const AddClass = () => {
         }
       });
 
-
-    setFormdata({
-        availableSeats:"",
-        languagename:"",
-        image:"",
-        price: "",
-
-        
-        
-    })
+      formRef.current.reset();
+  
   };
 
 
@@ -128,7 +125,7 @@ const AddClass = () => {
                     type="text"
                     className="input input-bordered"
                     name="languagename"
-                    value={formdata.languagename}
+                    
                   />
                 </div>
               </div>
@@ -141,7 +138,7 @@ const AddClass = () => {
                     type="text"
                     className="input input-bordered"
                     name="image"
-                    value={formdata.image}
+                    
                   />
                 </div>
                 <div className="form-control">
@@ -152,7 +149,7 @@ const AddClass = () => {
                     type="text"
                     className="input input-bordered"
                     name="availableSeats"
-                    value={formdata.availableSeats}
+                    
                   />
                 </div>
                 <div className="form-control">
@@ -163,7 +160,7 @@ const AddClass = () => {
                     type="text"
                     className="input input-bordered"
                     name="price"
-                    value={formdata.price}
+                    
                   />
                 </div>
                 <div className="form-control">
