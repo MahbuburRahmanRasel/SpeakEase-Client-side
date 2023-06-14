@@ -1,4 +1,4 @@
-# Website site name : SpeakEase
+# Website name : SpeakEase
 ## Features: 
 1. There are a lot of features on this MERN stack website, especially for foreign language users.
 
