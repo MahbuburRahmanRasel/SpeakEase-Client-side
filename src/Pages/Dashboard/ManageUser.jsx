@@ -54,8 +54,8 @@ const handleMakeInstructor = user =>{
   return (
     <div>
       <p className="text-3xl font-bold text-center mt-10">Total Users: {users.length}</p>
-      <div className="overflow-x-auto">
-        <table className="table mx-auto w-2/3">
+      <div className="overflow-x-scroll h-96 overflow-y-scroll">
+        <table className="table mx-auto w-2/3  ">
           <thead className="bg-theme-1 text-theme-3-100 text-lg">
             <tr>
               <th></th>
@@ -65,7 +65,7 @@ const handleMakeInstructor = user =>{
               <th>Change Role</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="">
           {
             users.map((item,index)=>(
                 <tr key={index}>
