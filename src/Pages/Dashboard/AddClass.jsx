@@ -4,8 +4,7 @@ import Swal from "sweetalert2";
 
 const AddClass = () => {
   const { user } = useContext(AuthContext);
-  const formRef = useRef(null);
- 
+  
 
 
   const handleUpdate = (event) => {
@@ -72,8 +71,22 @@ const AddClass = () => {
         }
       });
 
-      formRef.current.reset();
-  
+    fetch(
+      `https://b7a12-summer-camp-server-side-mahbubur-rahman-rasel.vercel.app/teachers`,
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(updatedTeacher),
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+
+    
   };
 
 
