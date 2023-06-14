@@ -1,110 +1,128 @@
 [
   {
-    "language": "French",
-    "instructor": "Sophie Dubois",
+    "languageName": "French",
+    "instructorName": "Sophie Dubois",
     "email": "sophie.dubois@example.com",
-    "image": "https://i.ibb.co/WVtkLDw/1.png"
+    "instructorImage": "https://i.ibb.co/WVtkLDw/1.png"
+   
   },
   {
-    "language": "Spanish",
-    "instructor": "Carlos Hernandez",
+    "languageName": "Spanish",
+    "instructorName": "Carlos Hernandez",
     "email": "carlos.hernandez@example.com",
-    "image": "https://i.ibb.co/xz6pZCk/2.png"
+    "instructorImage": "https://i.ibb.co/xz6pZCk/2.png"
+   
   },
   {
-    "language": "German",
-    "instructor": "Hans Müller",
+    "languageName": "German",
+    "instructorName": "Hans Müller",
     "email": "hans.muller@example.com",
-    "image": "https://i.ibb.co/vH34zHG/3.png"
+    "instructorImage": "https://i.ibb.co/vH34zHG/3.png"
+   
   },
   {
-    "language": "Chinese",
-    "instructor": "Li Wei",
+    "languageName": "Chinese",
+    "instructorName": "Li Wei",
     "email": "li.wei@example.com",
-    "image": "https://i.ibb.co/G0qB980/4.png"
+    "instructorImage": "https://i.ibb.co/G0qB980/4.png"
+   
   },
   {
-    "language": "Japanese",
-    "instructor": "Yuki Tanaka",
+    "languageName": "Japanese",
+    "instructorName": "Yuki Tanaka",
     "email": "yuki.tanaka@example.com",
-    "image": "https://i.ibb.co/wY9FFQw/5.png"
+    "instructorImage": "https://i.ibb.co/wY9FFQw/5.png"
+   
   },
   {
-    "language": "Italian",
-    "instructor": "Giovanni Rossi",
+    "languageName": "Italian",
+    "instructorName": "Giovanni Rossi",
     "email": "giovanni.rossi@example.com",
-    "image": "https://i.ibb.co/TbKnGpG/6.png"
+    "instructorImage": "https://i.ibb.co/TbKnGpG/6.png"
+   
   },
   {
-    "language": "Arabic",
-    "instructor": "Ali Ahmed",
+    "languageName": "Arabic",
+    "instructorName": "Ali Ahmed",
     "email": "ali.ahmed@example.com",
-    "image": "https://i.ibb.co/CKtwWKg/7.png"
+    "instructorImage": "https://i.ibb.co/CKtwWKg/7.png"
+   
   },
   {
-    "language": "Russian",
-    "instructor": "Svetlana Ivanova",
+    "languageName": "Russian",
+    "instructorName": "Svetlana Ivanova",
     "email": "svetlana.ivanova@example.com",
-    "image": "https://i.ibb.co/1mKZs4W/8.png"
+    "instructorImage": "https://i.ibb.co/1mKZs4W/8.png"
+   
   },
   {
-    "language": "Portuguese",
-    "instructor": "Pedro Silva",
+    "languageName": "Portuguese",
+    "instructorName": "Pedro Silva",
     "email": "pedro.silva@example.com",
-    "image": "https://i.ibb.co/R0cWxT0/9.png"
+    "instructorImage": "https://i.ibb.co/R0cWxT0/9.png"
+   
   },
   {
-    "language": "Korean",
-    "instructor": "Kim Min-Ji",
+    "languageName": "Korean",
+    "instructorName": "Kim Min-Ji",
     "email": "kim.minji@example.com",
-    "image": "https://i.ibb.co/Q9dbn3M/10.png"
+    "instructorImage": "https://i.ibb.co/Q9dbn3M/10.png"
+  
   },
   {
-    "language": "Hindi",
-    "instructor": "Amit Patel",
+    "languageName": "Hindi",
+    "instructorName": "Amit Patel",
     "email": "amit.patel@example.com",
-    "image": "https://i.ibb.co/FDyLGPZ/11.png"
+    "instructorImage": "https://i.ibb.co/FDyLGPZ/11.png"
+   
   },
   {
-    "language": "Dutch",
-    "instructor": "Emma van der Meer",
+    "languageName": "Dutch",
+    "instructorName": "Emma van der Meer",
     "email": "emma.vandermeer@example.com",
-    "image": "https://i.ibb.co/s9xQwRF/12.png"
+    "instructorImage": "https://i.ibb.co/s9xQwRF/12.png"
+   
   },
   {
-    "language": "Greek",
-    "instructor": "Maria Papadopoulos",
+    "languageName": "Greek",
+    "instructorName": "Maria Papadopoulos",
     "email": "maria.papadopoulos@example.com",
-    "image": "https://i.ibb.co/BKjMkmZ/13.png"
+    "instructorImage": "https://i.ibb.co/BKjMkmZ/13.png"
+   
   },
   {
-    "language": "Spanish",
-    "instructor": "Maria Sanchez",
+    "languageName": "Spanish",
+    "instructorName": "Maria Sanchez",
     "email": "maria.sanchez@example.com",
-    "image": "https://i.ibb.co/85Gfks6/14.png"
+    "instructorImage": "https://i.ibb.co/85Gfks6/14.png"
+   
   },
   {
-    "language": "German",
-    "instructor": "Hans Schmidt",
+    "languageName": "German",
+    "instructorName": "Hans Schmidt",
     "email": "hans.schmidt@example.com",
-    "image": "https://i.ibb.co/kyxCcxC/15.png"
+    "instructorImage": "https://i.ibb.co/kyxCcxC/15.png"
+   
   },
   {
-    "language": "Italian",
-    "instructor": "Giuseppe Russo",
+    "languageName": "Italian",
+    "instructorName": "Giuseppe Russo",
     "email": "giuseppe.russo@example.com",
-    "image": "https://i.ibb.co/wCTmH6k/16.png"
+    "instructorImage": "https://i.ibb.co/wCTmH6k/16.png"
+   
   },
   {
-    "language": "Chinese",
-    "instructor": "Li Wei",
+    "languageName": "Chinese",
+    "instructorName": "Li Wei",
     "email": "li.wei@example.com",
-    "image": "https://i.ibb.co/WDpxNg4/17.png"
+    "instructorImage": "https://i.ibb.co/WDpxNg4/17.png"
+   
   },
   {
-    "language": "Russian",
-    "instructor": "Anastasia Ivanova",
+    "languageName": "Russian",
+    "instructorName": "Anastasia Ivanova",
     "email": "anastasia.ivanova@example.com",
-    "image": "https://i.ibb.co/JtNTpZC/18.png"
+    "instructorImage": "https://i.ibb.co/JtNTpZC/18.png"
+   
   }
 ]

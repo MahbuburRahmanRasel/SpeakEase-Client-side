@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const MyClass = () => {
+
+    const [myclass , setMyclass] = useState([])
+
+    useEffect(()=>{
+        fetch('')
+    },[])
+
+
     return (
         <div>
-            <p>my class .....</p>
+            <p></p>
         </div>
     );
 };

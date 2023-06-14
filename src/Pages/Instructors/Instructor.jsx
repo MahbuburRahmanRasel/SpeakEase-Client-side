@@ -3,17 +3,17 @@ import './instructor.css'
 
 const Instructor = ({item}) => {
 
-    const {language, instructor, email, image}= item 
+    const {languageName, instructorName, email, instructorImage}= item 
 
 
     return (
         <div>
              <div className=  "adhoster__card">
               
-                    <img src={image} alt=""  className='w-full'/>
+                    <img src={instructorImage} alt=""  className='w-full'/>
               
-                <h1 className='text-3xl  '>Name of Class <br /> <span className='font-bold text-theme-3-400 '>{language} </span> </h1>
-                <p className='text-xl'> Teacher <br /><span className='font-bold text-theme-3-400'>{instructor}</span></p>
+                <h1 className='text-3xl  '>Name of Class <br /> <span className='font-bold text-theme-3-400 '>{languageName} </span> </h1>
+                <p className='text-xl'> Teacher <br /><span className='font-bold text-theme-3-400'>{instructorName}</span></p>
                 <p className='text-lg'>Email: <br /> {email}</p>
               
 
