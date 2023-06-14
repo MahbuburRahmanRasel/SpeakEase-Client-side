@@ -43,7 +43,7 @@ const handleMakeInstructor = user =>{
                 
                 position: 'top-end',
                 icon: 'success',
-                title: `${user.name} is an Admin Now!`,
+                title: `${user.name} is Instructor Now!`,
                 showConfirmButton: false,
                 timer: 1500
               })

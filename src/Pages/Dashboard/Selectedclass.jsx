@@ -11,7 +11,7 @@ const Selectedclass = () => {
            
            <p className=' text-xl text-center bg-theme-1 text-theme-3-100'>Your Selected Class:  {cart?.length}</p>
            <div className="overflow-x-auto">
-  <table className="table table-zebra">
+  <table className="table table-pin-rows table-pin-cols">
     {/* head */}
     <thead className='text-center'>
       <tr className=' text-theme-dark text-lg'>

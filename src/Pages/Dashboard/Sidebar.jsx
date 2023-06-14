@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {FaUserCheck, FaUserFriends, FaUserGraduate} from 'react-icons/fa'
 import {BsClipboardFill, BsFillArrowLeftSquareFill, BsFillCartCheckFill} from 'react-icons/bs'
-import { AiFillFileAdd, AiFillHome } from 'react-icons/ai';
+import { AiFillDollarCircle, AiFillFileAdd, AiFillHome } from 'react-icons/ai';
 import SidebarItem from './SidebarItem';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +27,8 @@ const Sidebar = () => {
         { "name": "Add A Class", "link": "/dashboard/addclass", icon: <AiFillFileAdd /> , "role": "instructor" },
         { "name": "My Class", "link": "/dashboard/myclass", icon: <FaUserGraduate /> , "role": "instructor" },
         { "name": "My selected Class", "link": "/dashboard/selectedclass", icon: <FaUserCheck /> , "role": "user" },
-        { "name": "Enrolled Class", "link": "/dashboard/enrolledclass", icon: <BsFillCartCheckFill /> , "role": "user" }
+        { "name": "Enrolled Class", "link": "/dashboard/enrolledclass", icon: <BsFillCartCheckFill /> , "role": "user" },
+        { "name": "Payment History", "link": "/dashboard/paymenthistory", icon: <AiFillDollarCircle /> , "role": "user" }
         
     ]
     
